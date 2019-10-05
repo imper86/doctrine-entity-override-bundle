@@ -7,4 +7,5 @@ if (!file_exists($file = __DIR__.'/../../vendor/autoload.php')) {
 }
 
 $loader = require $file;
+require_once __DIR__.'/app/AppKernel.php';
 AnnotationRegistry::registerLoader(array($loader, 'loadClass'));

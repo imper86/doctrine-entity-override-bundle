@@ -4,7 +4,6 @@ imports:
 framework:
     test: ~
     translator:      { fallback: "%locale%" }
-    translator: ~
     secret:          "secret"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -15,7 +14,6 @@ framework:
     templating:
         engines: ['twig']
     default_locale:  "%locale%"
-    trusted_proxies: ~
     session:
         storage_id:  session.storage.mock_file
     fragments:       ~

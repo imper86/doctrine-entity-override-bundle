@@ -35,7 +35,7 @@ class CustomizedUserTest extends TestBase
         $this->drop();
 
         /** @var UserManager $userManager */
-        $userManager = $this->container->get('fos_user.user_manager');
+        $userManager = self::$container->get('fos_user.user_manager');
 
         $newUser = $userManager->createUser();
         $this->assertInstanceOf(
