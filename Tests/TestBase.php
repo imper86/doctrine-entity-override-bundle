@@ -7,6 +7,10 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 class TestBase extends WebTestCase
 {
     /**
+     * @var \Symfony\Component\DependencyInjection\ContainerInterface|null
+     */
+    protected static $container;
+    /**
      * @var \Doctrine\ORM\EntityManager
      */
     protected $em;
